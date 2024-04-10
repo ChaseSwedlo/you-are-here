@@ -7,6 +7,7 @@
         <meta name="description" content="Flyer">
         <meta name="keywords" content="html, css, web, web development">
         <title>Flyer</title>
+        <link rel="icon" href="./assets/media/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
         <link rel="stylesheet" href="./assets/style/index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +37,9 @@
                     <div class="content">
                         <h1>Your Food, Our priority</h1>
                         <div class="finder">
-                            <input type="text" placeholder="Find restraunts and stores near you...">
+                            <input type="text" 
+                            class="search-bar" 
+                            placeholder="Find restraunts and stores near you...">
                             <button class="search">
                                 <i class="fa-solid fa-arrow-right"></i>
                             </button>
@@ -51,7 +54,8 @@
                             <i class="fa-solid fa-truck-fast"></i>
                             <h3>Swift Delivery</h3>
                             <p>
-                                Flyer ensures lightning-fast delivery of your favorite dishes to your doorstep.
+                                Flyer ensures lightning-fast 
+                                delivery of your favorite dishes to your doorstep.
                             </p>
                             <h4>Order now <i class="fa-solid fa-arrow-right"></i></h4>
                         </div>
@@ -59,7 +63,8 @@
                             <i class="fa-solid fa-utensils"></i>
                             <h3>Diverse Menus</h3>
                             <p>
-                                Flyer offers an extensive array of cuisines to satisfy every craving and palate.
+                                Flyer offers an extensive array of 
+                                cuisines to satisfy every craving and palate.
                             </p>
                             <h4>Find your craving <i class="fa-solid fa-arrow-right"></i></h4>
                         </div>
@@ -67,17 +72,23 @@
                             <i class="fa-solid fa-location-dot"></i>
                             <h3>Top-tier Tracking</h3>
                             <p>
-                                Track your delivery every step with Flyer's top-tier tracking.
+                                Track your delivery every step with 
+                                Flyer's top-tier tracking.
                             </p>
-                            <h4>Try it out <i class="fa-solid fa-arrow-right"></i></h4>
+                            <a href="#map-section">
+                                <h4>Try it out <i class="fa-solid fa-arrow-right"></i></h4>
+                            </a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="map-section">
+            <section class="map-section" id="map-section">
                 <div class="container center">
                     <h2 class="flyer-track">FlyerTrack: Your Real-Time Flyer Courier Map</h2>
-                    <p>Experience the power of Flyer's live tracking map. Monitor your food deliveries from kitchen to doorstep.</p>
+                    <p>
+                        Experience the power of Flyer's live tracking map. Monitor 
+                        your food deliveries from kitchen to doorstep.
+                    </p>
                     <button class="find-you">Find yourself</button>
                     <div class="map" id="map"></div>
                 </div>
