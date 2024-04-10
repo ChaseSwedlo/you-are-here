@@ -6,7 +6,6 @@ const searchBar = document.querySelector('.search-bar');
 const searchButton = document.querySelector('.search');
 let userLatitude = 40.758896;
 let userLongitude = -73.985130;
-
 mapboxgl.accessToken = 'pk.eyJ1IjoiY2hhc2Vzd2VkbG8iLCJhIjoiY2x1cmlwenlmMDFzNjJxbW9jcjF4eHNreSJ9.vHG-jnm9uU-wInuQjToVQw';
 const map = new mapboxgl.Map({
 	container: 'map',
