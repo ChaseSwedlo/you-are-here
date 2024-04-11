@@ -6,6 +6,7 @@ const searchBar = document.querySelector('.search-bar');
 const searchButton = document.querySelector('.search');
 let userLatitude = 40.758896;
 let userLongitude = -73.985130;
+let mark = '';
 mapboxgl.accessToken = 'pk.eyJ1IjoiY2hhc2Vzd2VkbG8iLCJhIjoiY2x1cmlwenlmMDFzNjJxbW9jcjF4eHNreSJ9.vHG-jnm9uU-wInuQjToVQw';
 const map = new mapboxgl.Map({
 	container: 'map',
@@ -31,10 +32,14 @@ const options = {
 }
 
 function buildMap() {
-    map.jumpTo({
-        center: [userLongitude, userLatitude]
+    map.flyTo({
+        center: [userLongitude, userLatitude],
+        speed: 2, 
+        curve: 1, 
+        essential: true
     });
-    new mapboxgl.Marker()
+    document.querySelectorAll('.mapboxgl-marker').forEach(marker => marker.remove());
+    mark = new mapboxgl.Marker()
     .setLngLat([userLongitude, userLatitude])
     .addTo(map);
 }
