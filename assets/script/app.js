@@ -39,7 +39,10 @@ function buildMap() {
         essential: true
     });
     document.querySelectorAll('.mapboxgl-marker').forEach(marker => marker.remove());
-    mark = new mapboxgl.Marker()
+    mark = new mapboxgl.Marker({
+        color: '#3b56ff',
+        scale: 1.4
+    })
     .setLngLat([userLongitude, userLatitude])
     .addTo(map);
 }
